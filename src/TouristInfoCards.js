@@ -18,7 +18,8 @@ const TouristInfoCards = () => {
     {
       link: "visitlondon.com",
       name: "london",
-      img: "http://via.placeholder.com/320x180"
+      img:
+        "https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz"
     }
   ];
   return locations.map(location => (
