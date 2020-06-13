@@ -9,12 +9,12 @@ const TouristInfoCards = () => {
       img: "https://www.linkpicture.com/q/Glasgow.jpg"
     },
     {
-      link: "visitmanchester.com",
+      link: "http://visitmanchester.com",
       name: "manchester",
       img: "https://www.linkpicture.com/q/manchester.jpeg"
     },
     {
-      link: "visitlondon.com",
+      link: "http://visitlondon.com",
       name: "london",
       img: "https://www.linkpicture.com/q/london.jpg"
     }
