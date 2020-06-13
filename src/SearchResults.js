@@ -1,12 +1,16 @@
 import React from "react";
 import TableHeader from "./TableHeader";
-import TableContent from "./TableContent";
+import SearchResultsRow from "./SearchResultsRow";
 
-const SearchResults = () => (
-  <table className="table">
-    <TableHeader />
-    <TableContent />
-  </table>
-);
+const SearchResults = props => {
+  return (
+    <table className="table">
+      <TableHeader />
+      {props.results.map((data, index) => (
+        <SearchResultsRow key={index} data={data} />
+      ))}
+    </table>
+  );
+};
 
 export default SearchResults;

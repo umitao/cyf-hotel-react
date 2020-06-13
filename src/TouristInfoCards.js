@@ -19,9 +19,13 @@ const TouristInfoCards = () => {
       img: "https://www.linkpicture.com/q/london.jpg"
     }
   ];
-  return locations.map(location => (
-    <Card key={location.name} img={location.img} link={location.link} />
-  ));
+  return (
+    <div className="cardContainer">
+      {locations.map(location => (
+        <Card key={location.name} img={location.img} link={location.link} />
+      ))}
+    </div>
+  );
 };
 
 export default TouristInfoCards;

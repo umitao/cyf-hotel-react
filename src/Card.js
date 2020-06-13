@@ -1,10 +1,10 @@
 import React from "react";
 
-const Card = ({ img, link }) => (
-  <div className="card col-sm">
-    <img className="card-img-top" src={img} alt="." />
+const Card = props => (
+  <div className="card">
+    <img className="card-img-top" src={props.img} alt="." />
     <div className="card-body">
-      <a href={link} className="btn btn-primary">
+      <a href={props.link} className="btn btn-primary">
         Go somewhere
       </a>
     </div>

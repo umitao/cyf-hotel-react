@@ -56,6 +56,16 @@ tr {
   text-align: center;
 }
 
+.footerItem {
+  list-style-type: none;
+}
+
 .card {
   width: 18rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

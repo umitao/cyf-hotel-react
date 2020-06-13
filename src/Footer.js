@@ -7,11 +7,15 @@ const Footer = () => {
     "0123 456789"
   ];
   return (
-    <ul>
-      {footerContent.map((footerElement, index) => (
-        <li key={index}>{footerElement}</li>
-      ))}
-    </ul>
+    <div className="footer">
+      <ul>
+        {footerContent.map((footerElement, index) => (
+          <li className="footerItem" key={index}>
+            {footerElement}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
