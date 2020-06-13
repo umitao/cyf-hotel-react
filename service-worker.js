@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cyf-hotel-react/precache-manifest.028813902a994d89d97035d1e20ea77b.js"
+  "/cyf-hotel-react/precache-manifest.b3788aa26b11d80f49873b5486b80d8b.js"
 );
 
 self.addEventListener('message', (event) => {

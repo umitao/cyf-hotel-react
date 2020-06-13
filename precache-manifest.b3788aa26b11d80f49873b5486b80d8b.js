@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43de6329dc4b647204e2a7c00dbb7ad2",
+    "revision": "e26076393d993372d13415121774ce2e",
     "url": "/cyf-hotel-react/index.html"
   },
   {
-    "revision": "4b29654fbc818d80345e",
+    "revision": "440c829c861d784c6924",
     "url": "/cyf-hotel-react/static/css/main.d4f3acf1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cyf-hotel-react/static/js/2.6fedb3de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b29654fbc818d80345e",
-    "url": "/cyf-hotel-react/static/js/main.951f7af3.chunk.js"
+    "revision": "440c829c861d784c6924",
+    "url": "/cyf-hotel-react/static/js/main.bb5c3591.chunk.js"
   },
   {
     "revision": "a17eedfa60f26189a33f",

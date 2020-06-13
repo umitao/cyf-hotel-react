@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cyf-hotel-react/static/css/main.d4f3acf1.chunk.css",
-    "main.js": "/cyf-hotel-react/static/js/main.951f7af3.chunk.js",
-    "main.js.map": "/cyf-hotel-react/static/js/main.951f7af3.chunk.js.map",
+    "main.js": "/cyf-hotel-react/static/js/main.bb5c3591.chunk.js",
+    "main.js.map": "/cyf-hotel-react/static/js/main.bb5c3591.chunk.js.map",
     "runtime-main.js": "/cyf-hotel-react/static/js/runtime-main.72cf73f6.js",
     "runtime-main.js.map": "/cyf-hotel-react/static/js/runtime-main.72cf73f6.js.map",
     "static/js/2.6fedb3de.chunk.js": "/cyf-hotel-react/static/js/2.6fedb3de.chunk.js",
     "static/js/2.6fedb3de.chunk.js.map": "/cyf-hotel-react/static/js/2.6fedb3de.chunk.js.map",
     "index.html": "/cyf-hotel-react/index.html",
-    "precache-manifest.028813902a994d89d97035d1e20ea77b.js": "/cyf-hotel-react/precache-manifest.028813902a994d89d97035d1e20ea77b.js",
+    "precache-manifest.b3788aa26b11d80f49873b5486b80d8b.js": "/cyf-hotel-react/precache-manifest.b3788aa26b11d80f49873b5486b80d8b.js",
     "service-worker.js": "/cyf-hotel-react/service-worker.js",
     "static/css/main.d4f3acf1.chunk.css.map": "/cyf-hotel-react/static/css/main.d4f3acf1.chunk.css.map",
     "static/js/2.6fedb3de.chunk.js.LICENSE.txt": "/cyf-hotel-react/static/js/2.6fedb3de.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.72cf73f6.js",
     "static/js/2.6fedb3de.chunk.js",
     "static/css/main.d4f3acf1.chunk.css",
-    "static/js/main.951f7af3.chunk.js"
+    "static/js/main.bb5c3591.chunk.js"
   ]
 }
