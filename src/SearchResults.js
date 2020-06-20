@@ -7,7 +7,7 @@ const SearchResults = props => {
     <table className="table">
       <TableHeader />
       {props.results.map((data, index) => (
-        <SearchResultsRow key={index} data={data} />
+        <SearchResultsRow key={index} selected={false} data={data} />
       ))}
     </table>
   );
