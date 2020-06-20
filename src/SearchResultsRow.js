@@ -5,7 +5,7 @@ const SearchResultsRow = props => {
   const data = props.data;
   const checkIn = moment(data.checkInDate);
   const checkOut = moment(data.checkOutDate);
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(false);
 
   const handleSelect = () => {
     return selected === false ? setSelected(true) : setSelected(false);
