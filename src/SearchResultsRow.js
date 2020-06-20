@@ -5,7 +5,6 @@ const SearchResultsRow = props => {
   const data = props.data;
   const checkIn = moment(data.checkInDate);
   const checkOut = moment(data.checkOutDate);
-  console.log(checkIn, checkOut);
   return (
     <tbody>
       <tr>
