@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import moment from "moment";
+import CustomerProfile from "./CustomerProfile";
 
 const SearchResultsRow = props => {
   const data = props.data;
   const checkIn = moment(data.checkInDate);
   const checkOut = moment(data.checkOutDate);
   const [selected, setSelected] = useState(false);
+  const [clickedProfile, setClickedProfile] = useState("");
 
-  const handleSelect = () => {
-    return selected === false ? setSelected(true) : setSelected(false);
+  const handleSelect = () => setSelected(!selected);
+
+  const handleClick = () => {
+    setClickedProfile(data.id);
   };
 
   return (
@@ -23,6 +27,10 @@ const SearchResultsRow = props => {
         <td>{data.checkInDate}</td>
         <td>{data.checkOutDate}</td>
         <td>{checkOut.diff(checkIn, "days")}</td>
+        <td>
+          <button onClick={handleClick}>Show Profile</button>
+          {clickedProfile ? <CustomerProfile id={clickedProfile} /> : null}
+        </td>
       </tr>
     </tbody>
   );
