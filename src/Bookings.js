@@ -17,7 +17,8 @@ const Bookings = () => {
       })
     );
   };
-  const url = "https://cyf-react.glitch.me/error";
+
+  const url = "https://cyf-react.glitch.me/";
 
   useEffect(() => {
     fetch(url)
