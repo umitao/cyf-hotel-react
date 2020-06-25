@@ -78,8 +78,8 @@ const BookingInput = props => {
           id="checkInDate"
           name="checkInDate"
           onChange={handleChange}
-          value={bookingInput.checkinDate}
-          placeholder="Checkin"
+          value={bookingInput.checkInDate}
+          placeholder="Check In"
         />
         <label htmlFor="CheckOutDate">Check Out Date</label>
         <input
@@ -90,9 +90,7 @@ const BookingInput = props => {
           value={bookingInput.checkOutDate}
           placeholder="Check Out"
         />
-        <button type="submit" onSubmit={handleSubmit}>
-          Submit
-        </button>
+        <button onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   );

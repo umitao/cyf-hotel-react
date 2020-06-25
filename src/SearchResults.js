@@ -3,7 +3,6 @@ import TableHeader from "./TableHeader";
 import SearchResultsRow from "./SearchResultsRow";
 import BookingInput from "./BookingInput";
 import NewBookingRow from "./NewBookingRow";
-
 const SearchResults = props => {
   const [newBooking, setNewBooking] = useState([]);
 
