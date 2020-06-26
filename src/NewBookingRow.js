@@ -9,6 +9,7 @@ const NewBookingRow = props => {
     return (
       <tbody>
         <tr>
+          <td>{data.id}</td>
           <td>{data.title}</td>
           <td>{data.firstName}</td>
           <td>{data.surname}</td>

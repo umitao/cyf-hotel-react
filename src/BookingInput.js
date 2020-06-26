@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const BookingInput = props => {
   const [bookingInput, setBookingInput] = useState({
+    id: "",
     firstName: "",
     surname: "",
     title: "",
@@ -24,11 +25,21 @@ const BookingInput = props => {
   };
 
   return (
-    <div>
-      <h1>Input Booking</h1>
-      <form>
+    <div className="col">
+      <form className="form-group search-box">
+        <label htmlFor="id">ID</label>
+        <input
+          className="form-control"
+          type="text"
+          id="id"
+          name="id"
+          onChange={handleChange}
+          value={bookingInput.id}
+          placeholder="ID"
+        />
         <label htmlFor="title">Title</label>
         <input
+          className="form-control"
           type="text"
           id="title"
           name="title"
@@ -38,6 +49,7 @@ const BookingInput = props => {
         />
         <label htmlFor="firstName">First Name</label>
         <input
+          className="form-control"
           type="text"
           id="firstName"
           name="firstName"
@@ -47,6 +59,7 @@ const BookingInput = props => {
         />
         <label htmlFor="surname">Surname</label>
         <input
+          className="form-control"
           type="text"
           id="surname"
           name="surname"
@@ -56,6 +69,7 @@ const BookingInput = props => {
         />
         <label htmlFor="email">email</label>
         <input
+          className="form-control"
           type="text"
           id="email"
           name="email"
@@ -65,6 +79,7 @@ const BookingInput = props => {
         />
         <label htmlFor="roomId">Room Id</label>
         <input
+          className="form-control"
           type="text"
           id="roomId"
           name="roomId"
@@ -72,8 +87,9 @@ const BookingInput = props => {
           value={bookingInput.roomId}
           placeholder="Room Id"
         />
-        <label htmlFor="CheckinDate">Checkin Date</label>
+        <label htmlFor="CheckInDate">Check In Date</label>
         <input
+          className="form-control"
           type="text"
           id="checkInDate"
           name="checkInDate"
@@ -83,6 +99,7 @@ const BookingInput = props => {
         />
         <label htmlFor="CheckOutDate">Check Out Date</label>
         <input
+          className="form-control"
           type="text"
           id="checkOutDate"
           name="checkOutDate"
