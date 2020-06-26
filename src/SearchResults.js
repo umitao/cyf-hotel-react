@@ -3,12 +3,13 @@ import TableHeader from "./TableHeader";
 import SearchResultsRow from "./SearchResultsRow";
 import BookingInput from "./BookingInput";
 import NewBookingRow from "./NewBookingRow";
+
 const SearchResults = props => {
   const [newBooking, setNewBooking] = useState([]);
-  const [sortState, setSortState] = useState("id");
+  const [sortBy, setSortBy] = useState("id");
 
-  const handleSortState = sortState => {
-    setSortState(sortState);
+  const handleSort = sortBy => {
+    setSortBy(sortBy);
   };
 
   const handleInputValue = newBooking => {
@@ -16,11 +17,12 @@ const SearchResults = props => {
   };
 
   let sortFunction;
-  if (sortState === "id" || sortState === "roomId" || sortState === "nights") {
-    sortFunction = (a, b) => a[sortState] - b[sortState];
+
+  if (sortBy === "id" || sortBy === "roomId" || sortBy === "nights") {
+    sortFunction = (a, b) => a[sortBy] - b[sortBy];
   } else {
     sortFunction = (a, b) => {
-      return a[sortState].localeCompare(b[sortState], "en", {
+      return a[sortBy].localeCompare(b[sortBy], "en", {
         sensitiviy: "base"
       });
     };
@@ -31,7 +33,7 @@ const SearchResults = props => {
   return (
     <>
       <table className="table">
-        <TableHeader stateSetter={handleSortState} />
+        <TableHeader stateSetter={handleSort} />
         {ascSorted.map((data, index) => (
           <SearchResultsRow key={index} selected={false} data={data} />
         ))}
