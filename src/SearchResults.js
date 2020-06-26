@@ -16,12 +16,10 @@ const SearchResults = props => {
   };
 
   let sortFunction;
-  console.log(props.resul);
   if (sortState === "id" || sortState === "roomId" || sortState === "nights") {
     sortFunction = (a, b) => a[sortState] - b[sortState];
   } else {
     sortFunction = (a, b) => {
-      console.log(sortState);
       return a[sortState].localeCompare(b[sortState], "en", {
         sensitiviy: "base"
       });
